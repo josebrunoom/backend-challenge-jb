@@ -1,0 +1,20 @@
+schema {
+  query: Query
+}
+
+type Query {
+  getCharacteres: [Characters]
+  getQuotes: [Quotes]
+}
+
+type Characters {
+  id: ID!,
+  name: String!,
+  image_url: String!,
+}
+
+type Quotes {
+  id: ID!
+  name: String,
+  quotes: Array,
+}
